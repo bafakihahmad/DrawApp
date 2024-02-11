@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <script src="lib/p5.min.js"></script>
+
+    <script src="sketch.js"></script>
+
+    <!-- add extra scripts below -->
+    <script src="toolbox.js"></script>
+    <script src="colourPalette.js"></script>
+    <script src="helperFunctions.js"></script>
+
+    <script src="freehandTool.js"></script>
+    <script src="lineToTool.js"></script>
+    <script src="mirrorDrawTool.js"></script>
+    <script src="sprayCanTool.js"></script>
+    <script src="markerTool.js"></script>
+
+    <link rel="stylesheet" type="text/css" href="style.css" />
+    <script></script>
+  </head>
+  <body>
+    <div class="wrapper">
+      <div class="box header">
+        My Drawing App
+
+        <button id="clearButton">Clear</button>
+        <button id="saveImageButton">Save Image</button>
+        <button id="undoButton">Undo</button>
+        <button id="redoButton">Redo</button>
+      </div>
+      <div class="box" id="sidebar"></div>
+      <div id="content"></div>
+      <div class="colourPalette">
+        <canvas id="color-picker"></canvas>
+        <div class="info">
+          <h3>Selected color</h3>
+          <div class="selected"></div>
+        </div>
+      </div>
+      <div class="box options"></div>
+    </div>
+  </body>
+</html>
